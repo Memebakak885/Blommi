@@ -45,62 +45,6 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
   <section class="section" id="precios">
     <h2>Catálogo</h2>
     <div class="products" id="product-list">
-    
-      // Array de productos
-    const products = [
-  { id: 1, name: "Rosa eterna", price: 150, img: "https://example.com/rosa.jpg" },
-  { id: 2, name: "Mini arreglo eterno", price: 90, img:  
-  "https://example.com/arreglo.jpg" },
-  { id: 3, name: "Caja de rosas", price: 250, img: "https://example.com/caja.jpg" }
-];
-
-// Elementos del DOM
-const productList = document.getElementById('product-list');
-const cartItems = document.getElementById('cart-items');
-const cartTotal = document.getElementById('cart-total');
-let cart = [];
-
-// Función para renderizar productos
-function renderProducts() {
-  products.forEach(product => {
-    const card = document.createElement('div');
-    card.className = 'product';
-    card.innerHTML = `
-      <img src="${product.img}" alt="${product.name}">
-      <h3>${product.name}</h3>
-      <p>${product.price} Bs.</p>
-      <button onclick="addToCart(${product.id})">Agregar al carrito</button>
-    `;
-    productList.appendChild(card);
-  });
-}
-
-// Función para agregar productos al carrito
-function addToCart(productId) {
-  const product = products.find(p => p.id === productId);
-  cart.push(product);
-  updateCart();
-}
-
-// Función para actualizar el carrito
-function updateCart() {
-  cartItems.innerHTML = ''; // Limpiar carrito
-  let total = 0;
-
-  // Mostrar productos en el carrito
-  cart.forEach(item => {
-    total += item.price;
-    const li = document.createElement('li');
-    li.textContent = `${item.name} - ${item.price} Bs.`;
-    cartItems.appendChild(li);
-  });
-
-  // Actualizar total
-  cartTotal.textContent = total;
-}
-
-// Inicializar productos
-renderProducts(); 
     </div>
   </section>
 
@@ -114,9 +58,9 @@ renderProducts();
 
   <section class="section" id="contacto">
     <h2>Contacto</h2>
-    <p>WhatsApp:63124486 <a href="https://wa.me/59170000000">+591 70000000</a><br>
-    Email: contacto@eternalbloom.bo<br>
-    Instagram: @eternalblooms.bo</p>
+    <p>WhatsApp:<a href="https://wa.me/59163124486">+591 63124486</a><br>
+    Email: veritiemagnoliakreativ@gmail.com <br>
+    Instagram: @veritemagnoliakreativ </p>
   </section>
 
   <div id="cart">
