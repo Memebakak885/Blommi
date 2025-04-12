@@ -140,17 +140,19 @@
       color: #333;
     }
 
+    /* Estilo del carrito */
     #cart {
       position: fixed;
       top: 1rem;
       right: 1rem;
       background: #F74780;  /* Fucsia fuerte para el carrito */
       color: white;
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: 8px;
       max-width: 300px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       z-index: 1000;
+      font-size: 0.9rem; /* Reducir el tamaño de la fuente del carrito */
     }
 
     #checkout-btn {
@@ -158,11 +160,11 @@
       color: white;
       font-weight: bold;
       border: none;
-      padding: 1.2rem 2.5rem;  /* Aumento del tamaño del botón */
+      padding: 1rem 2rem;  /* Aumento del tamaño del botón */
       border-radius: 8px;  /* Botón más redondeado */
       cursor: pointer;
       margin-top: 1rem;
-      font-size: 1.2rem;  /* Aumento del tamaño del texto */
+      font-size: 1rem;  /* Tamaño del texto adecuado */
       transition: background-color 0.3s;
       width: 100%; /* Ocupa todo el ancho del carrito */
     }
@@ -170,6 +172,29 @@
     #checkout-btn:hover {
       background-color: #F16DB1;  /* Fucsia suave al pasar el mouse */
       color: #333;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .cart-item button {
+      background-color: #F7BFD8;  /* Rosa suave para el botón de eliminar */
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cart-item button:hover {
+      background-color: #F16DB1;  /* Fucsia suave al pasar el mouse */
     }
 
     footer {
@@ -198,22 +223,6 @@
 
     #contacto a:hover {
       color: #F3AACB;  /* Fucsia intermedio al pasar el mouse */
-    }
-
-    /* Estilo del carrito */
-    .cart-item button {
-      background-color: #F74780; /* Color del botón de eliminar */
-      color: white;
-      font-weight: bold;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .cart-item button:hover {
-      background-color: #F16DB1;
     }
   </style>
 </head>
@@ -339,11 +348,8 @@
       cart.forEach(item => {
         total += item.price;
         const li = document.createElement('li');
-        li.textContent = `${item.name} - ${item.price} Bs.`;
-        const removeBtn = document.createElement('button');
-        removeBtn.textContent = 'Eliminar';
-        removeBtn.onclick = () => removeFromCart(item.id);
-        li.appendChild(removeBtn);
+        li.className = 'cart-item';
+        li.innerHTML = `${item.name} - ${item.price} Bs. <button onclick="removeFromCart(${item.id})">Eliminar</button>`;
         cartItems.appendChild(li);
       });
       cartTotal.textContent = total;
