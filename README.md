@@ -45,7 +45,8 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
   <section class="section" id="precios">
     <h2>Catálogo</h2>
     <div class="products" id="product-list">
-  
+    </div>
+    </section>
 
   <section class="section" id="entrega">
     <h2>Lugares de Entrega</h2>
