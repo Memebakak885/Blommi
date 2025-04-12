@@ -12,17 +12,17 @@
     /* Fondo y colores generales */
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;  /* Beige cálido */
+      background-color: #fbd3f1;  /* Rosa pastel suave */
       color: #333;
       line-height: 1.6;
     }
     
     header {
-      background-color: #f1c6d4;  /* Rosa pastel suave */
+      background-color: #f0c8e1;  /* Rosa pastel suave */
       color: #fff;
       padding: 3rem 2rem;
       text-align: center;
-      border-bottom: 2px solid #d8a0b6; /* Rosa intermedio */
+      border-bottom: 2px solid #d8a0b6;
     }
 
     header h1 {
@@ -39,7 +39,7 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: #a0d6b2;  /* Verde menta suave */
+      background-color: #d0b6ff;  /* Lila bebé */
       padding: 1rem;
     }
 
@@ -66,7 +66,7 @@
     .section h2 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
-      color: #f1c6d4;
+      color: #f0c8e1;
       font-size: 2rem;
     }
 
@@ -98,7 +98,7 @@
     }
 
     .product h3 {
-      color: #f1c6d4;
+      color: #f0c8e1;
       margin-bottom: 0.5rem;
     }
 
@@ -108,7 +108,7 @@
     }
 
     .product button {
-      background-color: #a0d6b2;  /* Verde menta */
+      background-color: #d0b6ff;  /* Lila bebé */
       border: none;
       padding: 0.8rem 1.2rem;
       margin-top: 1rem;
@@ -120,7 +120,7 @@
     }
 
     .product button:hover {
-      background-color: #b5e8d9;  /* Verde más claro */
+      background-color: #a79eff;  /* Lila más claro */
       color: #333;
     }
 
@@ -128,7 +128,7 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      background: #f1c6d4;
+      background: #f0c8e1;  /* Rosa pastel suave */
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
@@ -138,7 +138,7 @@
     }
 
     #checkout-btn {
-      background-color: #a0d6b2;  /* Verde menta */
+      background-color: #f18fbf;  /* Rosa fuerte para finalizar compra */
       color: white;
       font-weight: bold;
       border: none;
@@ -150,7 +150,7 @@
     }
 
     #checkout-btn:hover {
-      background-color: #b5e8d9;  /* Verde más claro */
+      background-color: #f8b8c7;  /* Rosa más claro */
       color: #333;
     }
 
