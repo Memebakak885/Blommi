@@ -106,21 +106,30 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
 
     function addToCart(id) {
       const product = products.find(p => p.id === id);
-      cart.push(product);
+      cartItems.push(product);
       updateCart();
     }
 
     function updateCart() {
-      cartItems.innerHTML = '';
       let total = 0;
-      cart.forEach(item => {
+      cartItems.forEach(item => {
         total += item.price;
-        const li = document.createElement('li');
-        li.textContent = item.name + " - " + item.price + " Bs.";
-        cartItems.appendChild(li);
       });
       cartTotal.textContent = total;
     }
+
+    function generateWhatsAppLink() {
+      let message = "¡Hola! Me gustaría hacer un pedido de flores:\n\n";
+      cartItems.forEach(item => {
+        message += `Producto: ${item.name} - Precio: ${item.price} Bs.\n`;
+      });
+      message += `\nTotal: ${cartTotal.textContent} Bs.`;
+      const encodedMessage = encodeURIComponent(message);
+      const link = `https://wa.me/59163124486?text=${encodedMessage}`;
+      window.open(link, '_blank');
+    }
+
+    document.getElementById('checkout-btn').addEventListener('click', generateWhatsAppLink);
 
     renderProducts();
   </script>
