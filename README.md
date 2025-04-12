@@ -27,7 +27,7 @@
     }
 
     header h1 {
-      font-size: 3.5rem;
+      font-size: 4rem; /* Título más grande */
       font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
     }
 
@@ -39,7 +39,7 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem; /* Reducir espacio entre botones */
       background-color: #F3AACB;  /* Rosa intermedio */
       padding: 1rem;
     }
@@ -49,6 +49,7 @@
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
+      font-size: 1rem; /* Reducir el tamaño de los botones */
     }
 
     nav a:hover {
@@ -67,7 +68,7 @@
     .section h2 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
-      color: #5A189A;  /* Color más oscuro para los títulos */
+      color: #F7BFD8;  /* Fucsia para títulos */
       font-size: 2rem;
       font-weight: bold; /* Negrita */
     }
@@ -131,7 +132,7 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      background: #9D4EDD;  /* Fucsia más notorio para el carrito */
+      background: #F16DB1;  /* Fucsia fuerte para el carrito */
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
