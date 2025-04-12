@@ -374,7 +374,10 @@
       window.open(link, '_blank');
     }
 
-    document.getElementById('checkout-btn').addEventListener('click', generateWhatsAppLink);
+    // Aplicar la misma función para ambos botones
+    document.querySelectorAll('#checkout-btn').forEach(button => {
+      button.addEventListener('click', generateWhatsAppLink);
+    });
 
     renderProducts();
   </script>
