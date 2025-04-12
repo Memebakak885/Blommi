@@ -12,17 +12,17 @@
     /* Fondo y colores generales */
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #E0AAFF;  /* Fondo lavanda suave */
-      color: #10002B;  /* Letras fuertes (moradas) */
+      background-color: #FBD5E5;  /* Fondo rosa pastel suave */
+      color: #333;
       line-height: 1.6;
     }
     
     header {
-      background-color: #240046;  /* Títulos morado oscuro */
+      background-color: #EB9AC0;  /* Títulos rosa oscuro suave */
       color: white;
       padding: 3rem 2rem;
       text-align: center;
-      border-bottom: 2px solid #7B2CBF; /* Morado brillante para la línea */
+      border-bottom: 2px solid #F3AACB; /* Rosa intermedio */
     }
 
     header h1 {
@@ -39,7 +39,7 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: #7B2CBF;  /* Botones morado brillante */
+      background-color: #F3AACB;  /* Rosa intermedio */
       padding: 1rem;
     }
 
@@ -51,7 +51,7 @@
     }
 
     nav a:hover {
-      color: #E0AAFF;
+      color: #F7BFD8;
       text-decoration: underline;
     }
 
@@ -66,7 +66,7 @@
     .section h2 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
-      color: #240046;  /* Títulos morado oscuro */
+      color: #EB9AC0;  /* Títulos rosa oscuro suave */
       font-size: 2rem;
     }
 
@@ -98,7 +98,7 @@
     }
 
     .product h3 {
-      color: #9D4EDD;  /* Resto de letras morado claro */
+      color: #F3AACB;  /* Rosa intermedio para los nombres de productos */
       margin-bottom: 0.5rem;
     }
 
@@ -108,7 +108,7 @@
     }
 
     .product button {
-      background-color: #7B2CBF;  /* Botón morado brillante */
+      background-color: #F3AACB;  /* Rosa intermedio para botones */
       border: none;
       padding: 0.8rem 1.2rem;
       margin-top: 1rem;
@@ -120,7 +120,7 @@
     }
 
     .product button:hover {
-      background-color: #9D4EDD;  /* Lila más claro al pasar el mouse */
+      background-color: #F7BFD8;  /* Rosa más claro al pasar el mouse */
       color: #333;
     }
 
@@ -128,7 +128,7 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      background: #3C096C;  /* Carrito morado intermedio */
+      background: #FDEAFF;  /* Fucsia suave para el carrito */
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
@@ -138,7 +138,7 @@
     }
 
     #checkout-btn {
-      background-color: #5A189A;  /* Botón de finalizar compra rosa fuerte */
+      background-color: #EB9AC0;  /* Rosa fuerte para finalizar compra */
       color: white;
       font-weight: bold;
       border: none;
@@ -150,7 +150,7 @@
     }
 
     #checkout-btn:hover {
-      background-color: #9D4EDD;  /* Lila más claro */
+      background-color: #F3AACB;  /* Rosa intermedio al pasar el mouse */
       color: #333;
     }
 
