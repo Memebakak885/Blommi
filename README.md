@@ -142,19 +142,20 @@
     }
 
     #checkout-btn {
-      background-color: #EB9AC0;  /* Rosa fuerte para finalizar compra */
+      background-color: #F74780;  /* Fresa fuerte para el botón de finalizar compra */
       color: white;
       font-weight: bold;
       border: none;
-      padding: 1rem 2rem;
-      border-radius: 5px;
+      padding: 1.2rem 2.5rem;  /* Aumento del tamaño del botón */
+      border-radius: 8px;  /* Botón más redondeado */
       cursor: pointer;
       margin-top: 1rem;
+      font-size: 1.2rem;  /* Aumento del tamaño del texto */
       transition: background-color 0.3s;
     }
 
     #checkout-btn:hover {
-      background-color: #F3AACB;  /* Rosa intermedio al pasar el mouse */
+      background-color: #F16DB1;  /* Fucsia suave al pasar el mouse */
       color: #333;
     }
 
