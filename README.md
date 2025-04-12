@@ -1,27 +1,11 @@
-# Bloomi
-Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A TODO.
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloomi</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Open Sans', sans-serif; background-color: #FAF4ED; color: #2B2B2B; }
-    header { background-color: #B3507A; color: white; padding: 2rem; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 2rem; background: #2B2B2B; padding: 1rem; }
-    nav a { color: #FAF4ED; text-decoration: none; font-weight: bold; }
-    .hero { background: url('https://i.imgur.com/JZCmJxd.jpg') center/cover; height: 60vh; display: flex; justify-content: center; align-items: center; color: white; font-size: 2rem; font-family: 'Playfair Display'; }
-    .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
-    h2 { font-family: 'Playfair Display'; margin-bottom: 1rem; color: #B3507A; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-    .product { background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 1rem; text-align: center; }
-    .product img { width: 100%; border-radius: 10px; }
-    .product button { background-color: #D4AF37; border: none; padding: 0.5rem 1rem; margin-top: 1rem; color: white; cursor: pointer; border-radius: 5px; }
-    #cart { position: fixed; top: 1rem; right: 1rem; background: #B3507A; color: white; padding: 1rem; border-radius: 8px; max-width: 300px; }
-    footer { background: #2B2B2B; color: #FAF4ED; text-align: center; padding: 2rem; margin-top: 2rem; }
+    /* Estilos del sitio (mantén tus estilos aquí) */
   </style>
 </head>
 <body>
@@ -32,7 +16,7 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
 
   <nav>
     <a href="#nosotros">Nosotros</a>
-    <a href="catálogo">precios</a>
+    <a href="#precios">Precios</a>
     <a href="#entrega">Lugares de entrega</a>
     <a href="#contacto">Contacto</a>
   </nav>
@@ -44,10 +28,10 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
 
   <section class="section" id="precios">
     <h2>Catálogo</h2>
-    <div class="products" id="product-list">
-    <!-- Productos se insertan desde JavaScript -->
-    </div>
-    </section>
+    <div class="products" id="product-list"></div>
+    <!-- Botón para finalizar compra -->
+    <button id="checkout-btn">Finalizar compra</button>
+  </section>
 
   <section class="section" id="entrega">
     <h2>Lugares de Entrega</h2>
@@ -61,7 +45,7 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
     <h2>Contacto</h2>
     <p>WhatsApp:<a href="https://wa.me/59163124486">+591 63124486</a><br>
     Email: veritiemagnoliakreativ@gmail.com <br>
-    Instagram: @veritemagnoliakreativ </p>
+    Instagram: @veritemagnoliakreativ</p>
   </section>
 
   <div id="cart">
@@ -106,21 +90,25 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
 
     function addToCart(id) {
       const product = products.find(p => p.id === id);
-      cartItems.push(product);
+      cart.push(product);
       updateCart();
     }
 
     function updateCart() {
+      cartItems.innerHTML = '';
       let total = 0;
-      cartItems.forEach(item => {
+      cart.forEach(item => {
         total += item.price;
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - ${item.price} Bs.`;
+        cartItems.appendChild(li);
       });
       cartTotal.textContent = total;
     }
 
     function generateWhatsAppLink() {
       let message = "¡Hola! Me gustaría hacer un pedido de flores:\n\n";
-      cartItems.forEach(item => {
+      cart.forEach(item => {
         message += `Producto: ${item.name} - Precio: ${item.price} Bs.\n`;
       });
       message += `\nTotal: ${cartTotal.textContent} Bs.`;
@@ -132,7 +120,6 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
     document.getElementById('checkout-btn').addEventListener('click', generateWhatsAppLink);
 
     renderProducts();
-    
   </script>
 </body>
-</html>
+</html> 
