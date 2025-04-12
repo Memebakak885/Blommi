@@ -45,6 +45,7 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
   <section class="section" id="precios">
     <h2>Catálogo</h2>
     <div class="products" id="product-list">
+    <!-- Productos se insertan desde JavaScript -->
     </div>
     </section>
 
