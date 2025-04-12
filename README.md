@@ -192,7 +192,10 @@
 <body>
   <header>
     <h1>Bloomi</h1>
-    <p>El regalo que no se marchita</p>
+    <p>El regalo que no se marchita. 
+    "Tal vez no eres perfecta
+Pero eres auténtica, loca y algo rara
+Y eso le gana a todo"</p>
   </header>
 
   <nav>
