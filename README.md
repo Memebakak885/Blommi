@@ -12,13 +12,13 @@
     /* Fondo y colores generales */
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #f8e9f1;  /* Rosa pastel claro */
+      background-color: #f8e9f1;  /* Rosa pastel */
       color: #333;
       line-height: 1.6;
     }
     
     header {
-      background-color: #f1c6d4;  /* Rosa pastel suave */
+      background-color: #f1c6d4;  /* lila pastel suave */
       color: #fff;
       padding: 3rem 2rem;
       text-align: center;
