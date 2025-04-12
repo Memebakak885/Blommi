@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloomi</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Fuente divertida y llamativa -->
   <style>
     /* Reset de margenes y padding */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,8 +27,8 @@
     }
 
     header h1 {
-      font-size: 3rem;
-      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
     }
 
     header p {
@@ -66,8 +67,9 @@
     .section h2 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
-      color: #EB9AC0;  /* Títulos rosa oscuro suave */
+      color: #5A189A;  /* Color más oscuro para los títulos */
       font-size: 2rem;
+      font-weight: bold; /* Negrita */
     }
 
     .products {
@@ -129,7 +131,7 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      background: #FDEAFF;  /* Fucsia suave para el carrito */
+      background: #9D4EDD;  /* Fucsia más notorio para el carrito */
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
@@ -166,9 +168,20 @@
     /* Enlaces fucsia */
     a {
       color: #F7BFD8;  /* Fucsia suave para los enlaces */
+      font-weight: bold; /* Enlace en negrita */
     }
 
     a:hover {
+      color: #F3AACB;  /* Fucsia intermedio al pasar el mouse */
+    }
+
+    /* Enlace WhatsApp */
+    #contacto a {
+      color: #F7BFD8;  /* Fucsia para el enlace de WhatsApp */
+      font-weight: bold; /* Enlace en negrita */
+    }
+
+    #contacto a:hover {
       color: #F3AACB;  /* Fucsia intermedio al pasar el mouse */
     }
   </style>
