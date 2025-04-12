@@ -27,7 +27,7 @@
     }
 
     header h1 {
-      font-size: 4rem; /* Título más grande */
+      font-size: 6rem; /* Aumento del tamaño dos veces */
       font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
     }
 
