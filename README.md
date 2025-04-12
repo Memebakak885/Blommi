@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloomi</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Fuente divertida y llamativa -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> <!-- Fuente casual y elegante -->
   <style>
     /* Reset de margenes y padding */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
     /* Fondo y colores generales */
     body {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Quicksand', sans-serif; /* Fuente más casual y elegante */
       background-color: #FBD5E5;  /* Fondo rosa pastel suave */
       color: #333;
       line-height: 1.6;
@@ -21,18 +21,19 @@
     header {
       background-color: #EB9AC0;  /* Títulos rosa oscuro suave */
       color: white;
-      padding: 3rem 2rem;
+      padding: 4rem 2rem;  /* Más espacio para el título */
       text-align: center;
       border-bottom: 2px solid #F3AACB; /* Rosa intermedio */
     }
 
     header h1 {
-      font-size: 15rem; /* Aumento del tamaño cinco veces */
-      font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
+      font-size: 20rem; /* Aumento del tamaño 5 veces más grande */
+      font-family: 'Playfair Display', serif; /* Fuente más llamativa y elegante para el título */
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      margin-top: 1rem;
     }
 
     /* Estilos del menú de navegación */
@@ -69,7 +70,7 @@
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
       color: #F74780;  /* Títulos más oscuros y fucsias */
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bold; /* Negrita */
     }
 
