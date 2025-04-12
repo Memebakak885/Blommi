@@ -32,7 +32,7 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
 
   <nav>
     <a href="#nosotros">Nosotros</a>
-    <a href="#precios">Precios</a>
+    <a href="catálogo">Precios</a>
     <a href="#entrega">Lugares de entrega</a>
     <a href="#contacto">Contacto</a>
   </nav>
