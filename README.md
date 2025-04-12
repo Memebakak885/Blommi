@@ -281,7 +281,7 @@
       { id: 3, name: "Caja de rosas eternas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
       { id: 4, name: "Ramo buquette", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 5, name: "Ramo buchon", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 6, name: "Agrega amigurumis", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }, 
+      { id: 6, name: "Agrega amigurumis", price: 250, img: "https://i.imgur.com/CFL9GdK.jpeg" }, 
       { id: 7, name: "Rosa de lana", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 8, name: "Rosa de limpiapipa", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
       { id: 9, name: "Tulipanes", price: 250, img: "https://i.imgur.com/sYNSMER.jpeg" }, 
