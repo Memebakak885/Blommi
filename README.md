@@ -284,7 +284,10 @@
       { id: 6, name: "Amigurumis", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }, 
       { id: 7, name: "Rosa de lana", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 8, name: "Rosa de limpiapipa", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 9, name: "Agrega chocolates", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
+      { id: 9, name: "Tulipanes", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }, 
+      { id: 10, name: "Gerberas", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
+      { id: 11, name: "Claveles", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
+      { id: 12, name: "Girasoles", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
     ];
 
     const productList = document.getElementById('product-list');
