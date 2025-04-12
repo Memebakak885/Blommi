@@ -12,8 +12,8 @@
     /* Fondo y colores generales */
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #fbd3f1;  /* Rosa pastel suave */
-      color: #333;
+      background-color: #fef9f2;  /* Fondo beige muy suave */
+      color: #2e2e2e;  /* Letras más oscuras para mayor contraste */
       line-height: 1.6;
     }
     
@@ -128,7 +128,7 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      background: #f0c8e1;  /* Rosa pastel suave */
+      background: #d70080;  /* Fucsia */
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
