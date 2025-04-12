@@ -156,7 +156,7 @@
     }
 
     #checkout-btn {
-      background-color: #F74780;  /* Fresa fuerte para el botón de finalizar compra */
+      background-color: #F7BFD8;  /* Rosa suave para el botón de finalizar compra */
       color: white;
       font-weight: bold;
       border: none;
@@ -356,8 +356,11 @@
     }
 
     function removeFromCart(id) {
-      cart = cart.filter(item => item.id !== id);
-      updateCart();
+      const index = cart.findIndex(item => item.id === id);
+      if (index !== -1) {
+        cart.splice(index, 1);  // Eliminar una sola instancia del producto
+        updateCart();
+      }
     }
 
     function generateWhatsAppLink() {
