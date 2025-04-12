@@ -27,7 +27,7 @@
     }
 
     header h1 {
-      font-size: 9rem; /* Aumento del tamaño tres veces */
+      font-size: 15rem; /* Aumento del tamaño cinco veces */
       font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
     }
 
@@ -68,7 +68,7 @@
     .section h2 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
-      color: #5A189A;  /* Títulos más oscuros */
+      color: #F74780;  /* Títulos más oscuros y fucsias */
       font-size: 2.5rem;
       font-weight: bold; /* Negrita */
     }
@@ -132,7 +132,7 @@
       position: fixed;
       top: 1rem;
       right: 1rem;
-      background: #F16DB1;  /* Fucsia fuerte para el carrito */
+      background: #F74780;  /* Fucsia fuerte para el carrito */
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
@@ -168,7 +168,7 @@
 
     /* Enlaces fucsia */
     a {
-      color: #F7BFD8;  /* Fucsia suave para los enlaces */
+      color: #F74780;  /* Fucsia para los enlaces */
       font-weight: bold; /* Enlace en negrita */
     }
 
@@ -178,7 +178,7 @@
 
     /* Enlace WhatsApp */
     #contacto a {
-      color: #F7BFD8;  /* Fucsia para el enlace de WhatsApp */
+      color: #F74780;  /* Fucsia para el enlace de WhatsApp */
       font-weight: bold; /* Enlace en negrita */
     }
 
