@@ -32,7 +32,7 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
 
   <nav>
     <a href="#nosotros">Nosotros</a>
-    <a href="catálogo">Precios</a>
+    <a href="catálogo">precios</a>
     <a href="#entrega">Lugares de entrega</a>
     <a href="#contacto">Contacto</a>
   </nav>
@@ -78,8 +78,12 @@ Talvez no eres perfecta, pero eres auténtica, loca y algo rara y eso le GANA A 
     const products = [
       { id: 1, name: "Rosa eterna", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 2, name: "Arreglo eterno", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 3, name: "Caja de rosas eternas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }
-    ];
+      { id: 3, name: "Caja de rosas eternas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }, 
+      { id: 4, name: "Ramo buquette", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
+      { id: 5, name: "Ramo buchon", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
+      { id: 6, name: "Amigurumis", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }
+    ]; 
+  
 
     const productList = document.getElementById('product-list');
     const cartItems = document.getElementById('cart-items');
