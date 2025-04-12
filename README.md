@@ -4,18 +4,163 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloomi</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap">
   <style>
+    /* Reset de margenes y padding */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Open Sans', sans-serif; background-color: #FAF4ED; color: #2B2B2B; }
-    header { background-color: #B3507A; color: white; padding: 2rem; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 2rem; background: #2B2B2B; padding: 1rem; }
-    nav a { color: #FAF4ED; text-decoration: none; font-weight: bold; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-    .product { background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 1rem; text-align: center; }
-    .product img { width: 100%; border-radius: 10px; }
-    .product button { background-color: #D4AF37; border: none; padding: 0.5rem 1rem; margin-top: 1rem; color: white; cursor: pointer; border-radius: 5px; }
-    #cart { position: fixed; top: 1rem; right: 1rem; background: #B3507A; color: white; padding: 1rem; border-radius: 8px; max-width: 300px; }
-    footer { background: #2B2B2B; color: #FAF4ED; text-align: center; padding: 2rem; margin-top: 2rem; }
+    
+    /* Fondo y colores generales */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8e9f1;  /* Rosa pastel claro */
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: #f1c6d4;  /* Rosa pastel suave */
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #d2a0b1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Estilos del menú de navegación */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #d2a0b1;  /* Rosa intermedio */
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #f8e9f1;
+      text-decoration: underline;
+    }
+
+    /* Estilo de las secciones */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+      color: #f1c6d4;
+      font-size: 2rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+      margin-top: 2rem;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);  /* Animación de elevación */
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .product h3 {
+      color: #f1c6d4;
+      margin-bottom: 0.5rem;
+    }
+
+    .product p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .product button {
+      background-color: #d2a0b1;  /* Rosa intermedio */
+      border: none;
+      padding: 0.8rem 1.2rem;
+      margin-top: 1rem;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #f1c6d4;  /* Rosa pastel al pasar el mouse */
+      color: #333;
+    }
+
+    #cart {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #f1c6d4;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    #checkout-btn {
+      background-color: #d2a0b1;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    #checkout-btn:hover {
+      background-color: #f1c6d4;
+      color: #333;
+    }
+
+    footer {
+      background: #2B2B2B;
+      color: #FAF4ED;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -24,10 +169,39 @@
     <p>El regalo que no se marchita</p>
   </header>
 
+  <nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#precios">Precios</a>
+    <a href="#entrega">Lugares de entrega</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="section" id="nosotros">
+    <h2>Nosotros</h2>
+    <p>Somos Bloomi, una tienda especializada en flores eternas preservadas con amor y dedicación. Nuestro objetivo es ofrecer un regalo elegante que perdure en el tiempo y transmita emociones reales.</p>
+  </section>
+
   <section class="section" id="precios">
     <h2>Catálogo</h2>
-    <div class="products" id="product-list"></div>
+    <div class="products" id="product-list">
+      <!-- Productos se insertan desde JavaScript -->
+    </div>
     <button id="checkout-btn">Finalizar compra</button>
+  </section>
+
+  <section class="section" id="entrega">
+    <h2>Lugares de Entrega</h2>
+    <ul>
+      <li>La Paz</li>
+      <li>El Alto</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>WhatsApp: <a href="https://wa.me/59163124486">+591 63124486</a><br>
+    Email: veritiemagnoliakreativ@gmail.com<br>
+    Instagram: @veritemagnoliakreativ</p>
   </section>
 
   <div id="cart">
@@ -44,7 +218,7 @@
     const products = [
       { id: 1, name: "Rosa eterna", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 2, name: "Arreglo eterno", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 3, name: "Caja de rosas eternas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }
+      { id: 3, name: "Caja de rosas eternas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }, 
     ];
 
     const productList = document.getElementById('product-list');
@@ -68,12 +242,12 @@
 
     function addToCart(id) {
       const product = products.find(p => p.id === id);
-      cart.push(product);  // Agregar el producto al carrito
-      updateCart();  // Actualizar la vista del carrito
+      cart.push(product);
+      updateCart();
     }
 
     function updateCart() {
-      cartItems.innerHTML = '';  // Limpiar carrito
+      cartItems.innerHTML = '';
       let total = 0;
       cart.forEach(item => {
         total += item.price;
@@ -84,13 +258,8 @@
       cartTotal.textContent = total;
     }
 
-    // Función para generar el enlace de WhatsApp
     function generateWhatsAppLink() {
       let message = "¡Hola! Me gustaría hacer un pedido de flores:\n\n";
-      if (cart.length === 0) {
-        alert('El carrito está vacío. Agrega productos antes de finalizar la compra.');
-        return;
-      }
       cart.forEach(item => {
         message += `Producto: ${item.name} - Precio: ${item.price} Bs.\n`;
       });
@@ -100,10 +269,9 @@
       window.open(link, '_blank');
     }
 
-    // Asignar el evento al botón de finalizar compra
     document.getElementById('checkout-btn').addEventListener('click', generateWhatsAppLink);
 
-    renderProducts();  // Llamada a la función para mostrar los productos
+    renderProducts();
   </script>
 </body>
 </html>
