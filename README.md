@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bloomi</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> <!-- Fuente casual y elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Fuente alegre -->
   <style>
     /* Reset de margenes y padding */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,14 +21,14 @@
     header {
       background-color: #EB9AC0;  /* Títulos rosa oscuro suave */
       color: white;
-      padding: 4rem 2rem;  /* Más espacio para el título */
+      padding: 6rem 2rem;  /* Más espacio para el título */
       text-align: center;
       border-bottom: 2px solid #F3AACB; /* Rosa intermedio */
     }
 
     header h1 {
-      font-size: 20rem; /* Aumento del tamaño 5 veces más grande */
-      font-family: 'Playfair Display', serif; /* Fuente más llamativa y elegante para el título */
+      font-size: 30rem; /* Aumento del tamaño 5 veces más grande */
+      font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
     }
 
     header p {
@@ -72,6 +72,17 @@
       color: #F74780;  /* Títulos más oscuros y fucsias */
       font-size: 3rem;
       font-weight: bold; /* Negrita */
+    }
+
+    .cinta {
+      border: 5px solid #F3AACB; /* Color rosa intermedio */
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #F74780; /* Color rosa fuerte */
+      display: inline-block;
+      background-color: #F7BFD8; /* Color suave de fondo */
+      font-weight: bold;
     }
 
     .products {
@@ -192,10 +203,7 @@
 <body>
   <header>
     <h1>Bloomi</h1>
-    <p>El regalo que no se marchita. 
-    "Tal vez no eres perfecta
-Pero eres auténtica, loca y algo rara
-Y eso le gana a todo"</p>
+    <p>El regalo que no se marchita</p>
   </header>
 
   <nav>
@@ -208,6 +216,9 @@ Y eso le gana a todo"</p>
   <section class="section" id="nosotros">
     <h2>Nosotros</h2>
     <p>Somos Bloomi, una tienda especializada en flores eternas preservadas con amor y dedicación. Nuestro objetivo es ofrecer un regalo elegante que perdure en el tiempo y transmita emociones reales.</p>
+    <div class="cinta">
+      Tal vez no eres perfecta, pero eres auténtica, loca y algo rara y eso le gana a todo
+    </div>
   </section>
 
   <section class="section" id="precios">
@@ -221,8 +232,28 @@ Y eso le gana a todo"</p>
   <section class="section" id="entrega">
     <h2>Lugares de Entrega</h2>
     <ul>
-      <li>La Paz</li>
-      <li>El Alto</li>
+      <li><strong>Lugares de Entrega La Paz- Zona Sur</strong></li>
+      <ul>
+        <li> Mega Center.</li>
+        <li> Teleférico Verde (Cualquier parada).</li>
+        <li> Otros.</li>
+      </ul>
+      <li><strong>Lugares de Entrega La Paz- Centro</strong></li>
+      <ul>
+        <li> Correos.</li>
+        <li> Plaza del Estudiante.</li>
+        <li> Stadium.</li>
+      </ul>
+      <li><strong>Lugares de Entrega Ciudad del Alto</strong></li>
+      <ul>
+        <li> Ceibo.</li>
+        <li> Teleférico Morado.</li>
+        <li> Teleférico Rojo.</li>
+      </ul>
+      <li><strong>Otros con Costo Adicional</strong></li>
+      <ul>
+        <li> Consultar.</li>
+      </ul>
     </ul>
   </section>
 
