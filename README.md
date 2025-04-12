@@ -287,7 +287,7 @@
       { id: 9, name: "Rosas de limpiapipa", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
       { id: 10, name: "Agregar chocolates", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 11, name: "Agregar luces led", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 12, name: "Agregar donitas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }
+      { id: 12, name: "Agregar donitas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }. 
     ];
 
     const productList = document.getElementById('product-list');
