@@ -12,17 +12,17 @@
     /* Fondo y colores generales */
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #f8e9f1;  /* Rosa pastel */
+      background-color: #f8f9fa;  /* Beige cálido */
       color: #333;
       line-height: 1.6;
     }
     
     header {
-      background-color: #f1c6d4;  /* lila pastel suave */
+      background-color: #f1c6d4;  /* Rosa pastel suave */
       color: #fff;
       padding: 3rem 2rem;
       text-align: center;
-      border-bottom: 2px solid #d2a0b1;
+      border-bottom: 2px solid #d8a0b6; /* Rosa intermedio */
     }
 
     header h1 {
@@ -39,7 +39,7 @@
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: #d2a0b1;  /* Rosa intermedio */
+      background-color: #a0d6b2;  /* Verde menta suave */
       padding: 1rem;
     }
 
@@ -108,7 +108,7 @@
     }
 
     .product button {
-      background-color: #d2a0b1;  /* Rosa intermedio */
+      background-color: #a0d6b2;  /* Verde menta */
       border: none;
       padding: 0.8rem 1.2rem;
       margin-top: 1rem;
@@ -120,7 +120,7 @@
     }
 
     .product button:hover {
-      background-color: #f1c6d4;  /* Rosa pastel al pasar el mouse */
+      background-color: #b5e8d9;  /* Verde más claro */
       color: #333;
     }
 
@@ -138,7 +138,7 @@
     }
 
     #checkout-btn {
-      background-color: #d2a0b1;
+      background-color: #a0d6b2;  /* Verde menta */
       color: white;
       font-weight: bold;
       border: none;
@@ -150,7 +150,7 @@
     }
 
     #checkout-btn:hover {
-      background-color: #f1c6d4;
+      background-color: #b5e8d9;  /* Verde más claro */
       color: #333;
     }
 
@@ -221,7 +221,7 @@
       { id: 3, name: "Caja de rosas eternas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
       { id: 4, name: "Ramo buquette", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 5, name: "Ramo buchon", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 6, name: "Amigurumis", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
+      { id: 6, name: "Amigurumis", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }
     ];
 
     const productList = document.getElementById('product-list');
