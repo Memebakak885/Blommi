@@ -93,12 +93,13 @@
 
     .product img {
       width: 100%;
+      max-width: 400px;  /* Imágenes más grandes */
       border-radius: 10px;
       margin-bottom: 1rem;
     }
 
     .product h3 {
-      color: #F3AACB;  /* Rosa intermedio para los nombres de productos */
+      color: #F3AACB;  /* Resto de letras morado claro */
       margin-bottom: 0.5rem;
     }
 
@@ -160,6 +161,15 @@
       text-align: center;
       padding: 2rem;
       margin-top: 2rem;
+    }
+
+    /* Enlaces fucsia */
+    a {
+      color: #F7BFD8;  /* Fucsia suave para los enlaces */
+    }
+
+    a:hover {
+      color: #F3AACB;  /* Fucsia intermedio al pasar el mouse */
     }
   </style>
 </head>
