@@ -27,7 +27,7 @@
     }
 
     header h1 {
-      font-size: 6rem; /* Aumento del tamaño dos veces */
+      font-size: 9rem; /* Aumento del tamaño tres veces */
       font-family: 'Pacifico', cursive; /* Título con fuente llamativa */
     }
 
@@ -68,8 +68,8 @@
     .section h2 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 1rem;
-      color: #F7BFD8;  /* Fucsia para títulos */
-      font-size: 2rem;
+      color: #5A189A;  /* Títulos más oscuros */
+      font-size: 2.5rem;
       font-weight: bold; /* Negrita */
     }
 
