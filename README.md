@@ -217,7 +217,7 @@
     <h2>Nosotros</h2>
     <p>Somos Bloomi, una tienda especializada en flores eternas preservadas con amor y dedicación. Nuestro objetivo es ofrecer un regalo elegante que perdure en el tiempo y transmita emociones reales.</p>
     <div class="cinta">
-      "Tal vez no eres perfecta pero eres auténtica, loca y algo rara y eso le gana a todo." 
+      "Recuerda el/ella se merece lo mejor tal vez no es perfect@ pero es auténtic@, loc@ y algo rar@ y eso le gana a todo." 
     </div>
   </section>
 
@@ -282,12 +282,6 @@
       { id: 4, name: "Ramo buquette", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
       { id: 5, name: "Ramo buchon", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
       { id: 6, name: "Amigurumis", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }
-      { id: 7, name: "Rosa de lana", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
-      { id: 8, name: "Arreglo eterno de lana", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 9, name: "Rosas de limpiapipa", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" },
-      { id: 10, name: "Agregar chocolates", price: 150, img: "https://i.imgur.com/UDt4ZIT.jpg" },
-      { id: 11, name: "Agregar luces led", price: 90, img: "https://i.imgur.com/UpnpOeE.jpg" },
-      { id: 12, name: "Agregar donitas", price: 250, img: "https://i.imgur.com/o8hI2Tt.jpg" }. 
     ];
 
     const productList = document.getElementById('product-list');
