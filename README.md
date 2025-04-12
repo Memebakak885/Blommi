@@ -164,6 +164,7 @@
       margin-top: 1rem;
       font-size: 1.2rem;  /* Aumento del tamaño del texto */
       transition: background-color 0.3s;
+      width: 100%; /* Ocupa todo el ancho del carrito */
     }
 
     #checkout-btn:hover {
@@ -197,6 +198,22 @@
 
     #contacto a:hover {
       color: #F3AACB;  /* Fucsia intermedio al pasar el mouse */
+    }
+
+    /* Estilo del carrito */
+    .cart-item button {
+      background-color: #F74780; /* Color del botón de eliminar */
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cart-item button:hover {
+      background-color: #F16DB1;
     }
   </style>
 </head>
@@ -268,6 +285,7 @@
     <h3>Carrito</h3>
     <ul id="cart-items"></ul>
     <p>Total: <span id="cart-total">0</span> Bs.</p>
+    <button id="checkout-btn">Finalizar compra</button>
   </div>
 
   <footer>
@@ -322,9 +340,18 @@
         total += item.price;
         const li = document.createElement('li');
         li.textContent = `${item.name} - ${item.price} Bs.`;
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Eliminar';
+        removeBtn.onclick = () => removeFromCart(item.id);
+        li.appendChild(removeBtn);
         cartItems.appendChild(li);
       });
       cartTotal.textContent = total;
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      updateCart();
     }
 
     function generateWhatsAppLink() {
